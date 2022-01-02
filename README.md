@@ -363,6 +363,12 @@ class PagesController extends AppController
 
 それに合わせてビューも変更すれば完璧です。
 
+```php
+<?php
+echo "hello, {$names[0]}. <br>";
+echo "hola, {$names[1]}.";
+```
+
 そう、ビューには配列も渡すことができるのです。
 
 2章ではモデルを使ってより本格的なサイト作成をしていきましょう。
