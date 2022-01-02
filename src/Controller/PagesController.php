@@ -66,8 +66,10 @@ class PagesController extends AppController
         }
     }
 
-    public function greet()
+    public function greet($name = null)
     {
+        $names = [$name, $this->request->getQuery('name')];
 
+        $this->set(compact('names'));
     }
 }

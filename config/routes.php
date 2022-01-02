@@ -69,7 +69,8 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
-    $routes->connect('/greet', ['controller' => 'Pages', 'action' => 'greet', 'greet']);
+    $routes->connect('/greet/:name', ['controller' => 'Pages', 'action' => 'greet', 'greet'])
+    ->setPass(['name']);
 
     /*
      * Connect catchall routes for all controllers.
