@@ -101,8 +101,8 @@ Router::scope('/', function (RouteBuilder $routes) {
 ```bash
 .
 └── src
-      └── Controller
-             └── PagesController.php
+    └── Controller
+        └── PagesController.php
 ```
 
 `PagesController.php`には以下のようになっています。
@@ -204,10 +204,10 @@ class PagesController extends AppController
 ```bash
 .
 └─ src
-      └── Template
-             └── Pages
-                    ├── greet.ctp
-                    └── home.ctp
+   └── Template
+       └── Pages
+           ├── greet.ctp
+           └── home.ctp
 ```
 
 更に`greet.ctp`に以下を書き込みましょう。
