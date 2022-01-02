@@ -269,11 +269,11 @@ use Cake\View\Exception\MissingTemplateException;
 class PagesController extends AppController
 {
     // 省略
-
+    
+    // 以下を変更
     public function greet($name = null)
     {
-      // 以下を追記
-      $this->set(compact('name'));
+        $this->set(compact('name'));
     }
 }
 ```
